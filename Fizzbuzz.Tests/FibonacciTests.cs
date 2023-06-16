@@ -20,7 +20,7 @@ namespace Fizzbuzz.Tests
                 // Assert
                 Assert.Fail();
             }
-            catch (ArgumentOutOfRangeException) 
+            catch (ArgumentOutOfRangeException)
             {
                 Assert.IsTrue(true);
             }
@@ -31,14 +31,14 @@ namespace Fizzbuzz.Tests
         [ExpectedException(typeof(ArgumentOutOfRangeException))]
         public void Should_Throw_ArgumentOutOfRangeException_When_Index_Below_0_Attribute(int index)
         {
-                // Arrange
-                var fibonacci = new Fibonacci();
+            // Arrange
+            var fibonacci = new Fibonacci();
 
-                // Act
-                fibonacci.CalculateFibonacciIndexValue(index);
+            // Act
+            fibonacci.CalculateFibonacciIndexValue(index);
 
-                // Assert
-                Assert.Fail();
+            // Assert
+            Assert.Fail();
         }
 
         [TestMethod]
